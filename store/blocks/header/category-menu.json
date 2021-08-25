@@ -14,7 +14,7 @@
   },
   "menu-item#category-inicio": {
     "props": {
-      "id": "menu-item-category-home",
+      "id": "menu-item-category-inicio",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -29,7 +29,7 @@
   },
   "menu-item#category-acct": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-category-acct",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -39,21 +39,30 @@
         "noFollow": false,
         "tagTitle": "ACCT",
         "text": "ACCT"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "danger",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true,
+      "iconPosition":"right"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#category-acct"
     ]
   },
-  "vtex.menu@2.x:submenu#category-apparel": {
+  "vtex.menu@2.x:submenu#category-acct": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-apparel"
+      "vtex.menu@2.x:menu#category-acct"
     ]
   },
-  "vtex.menu@2.x:menu#category-apparel": {
+  "vtex.menu@2.x:menu#category-acct": {
     "props": {
       "orientation": "vertical"
     },
@@ -120,7 +129,16 @@
         "noFollow": false,
         "tagTitle": "O QUE FAZEMOS",
         "text": "O QUE FAZEMOS"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "danger",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true,
+      "iconPosition":"right"
     },
     "blocks": [
       "vtex.menu@2.x:submenu#category-oquefazemos"
@@ -156,7 +174,18 @@
         "noFollow": false,
         "tagTitle": "servicos",
         "text": "SERVIÇOS"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--down", 
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "danger",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true,
+      "iconPosition":"right"
+
+      
     },
     "blocks": [
       "vtex.menu@2.x:submenu#category-oquefazemos-servicos"
@@ -164,7 +193,8 @@
   },
   "vtex.menu@2.x:submenu#category-oquefazemos-servicos": {
     "props": {
-      "width": "auto"
+      "width": "auto",
+      "blockClass":"batatinhafrita"
     },
     "children": [
       "vtex.menu@2.x:menu#category-oquefazemos-servicos"
@@ -257,21 +287,30 @@
         "noFollow": false,
         "tagTitle": "categorias",
         "text": "CATEGORIAS INDUSTRIAIS"
-      }
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "danger",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true,
+      "iconPosition":"right"
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-oquefazemos-servicos"
+      "vtex.menu@2.x:submenu#category-oquefazemos-categorias"
     ]
   },
-  "vtex.menu@2.x:submenu#category-oquefazemos-servicos": {
+  "vtex.menu@2.x:submenu#category-oquefazemos-categorias": {
     "props": {
       "width": "auto"
     },
     "children": [
-      "vtex.menu@2.x:menu#category-oquefazemos-servicos"
+      "vtex.menu@2.x:menu#category-oquefazemos-categorias"
     ]
   },
-  "vtex.menu@2.x:menu#category-oquefazemos-servicos": {
+  "vtex.menu@2.x:menu#category-oquefazemos-categorias": {
     "props": {
       "orientation": "vertical"
     },
