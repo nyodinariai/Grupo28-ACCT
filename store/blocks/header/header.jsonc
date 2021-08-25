@@ -7,59 +7,17 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "sticky-layout#desktop"
     ]
   },
-
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-
-  "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
-    "props": {
-      "fullWidth": "true"
-    }
-  },
-  "notification.bar#home": {
-    "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
-    }
-  },
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
+  "sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#4-desktop"]
+    "children": ["flex-layout.row#desktop"]
   },
-  "flex-layout.row#4-desktop": {
+  "flex-layout.row#desktop": {
     "props": {
-      "blockClass": "main-header",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -68,44 +26,164 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
       "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.col#spacer",
+      //menu principal
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "flex-layout.col#spacer",
+      //"search-bar",
+
+      //barras de idiomas
+      "locale-switcher#pt",
+      "locale-switcher#en",
+      "locale-switcher#es"
+      //"login",
+      //"minicart.v2"
     ]
+  },
+
+  "vtex.menu@2.x:menu#websites":{
+    "children": [
+      "menu-item#inicio",
+      "menu-item#acct",
+      "menu-item#oquefazemos",
+      "menu-item#blog",
+      "menu-item#parceiros",
+      "menu-item#contato"
+      //"menu-item#about-us"
+    ]
+  },
+  "menu-item#inicio": {
+    "props": {
+      "id": "menu-item-inicio",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Inicio",
+        "text": "INÍCIO"
+      }
+    }
+  },
+  "menu-item#acct": {
+    "props": {
+      "id": "menu-item-acct",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Acct",
+        "text": "ACCT"
+      }
+    }//,
+    //"blocks": ["vtex.menu@2.x:submenu#acct"] // Defining a submenu
+  },
+  /*"vtex.menu@2.x:submenu#acct": {
+    "children": [
+      "vtex.menu@2.x:menu#submenushop"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenushop": {
+    "children": [
+      "menu-item#acct"
+    ]
+  },*/
+
+  "menu-item#oquefazemos": {
+    "props": {
+      "id": "menu-item-oquefazemos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "oquefazemos",
+        "text": "O QUE FAZEMOS"
+      }
+    }
+  },
+  "menu-item#blog": {
+    "props": {
+      "id": "menu-item-blog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Blog",
+        "text": "BLOG"
+      }
+    }
+  }, "menu-item#parceiros": {
+    "props": {
+      "id": "menu-item-parceiros",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "parceiros",
+        "text": "PARCEIROS"
+      }
+    }
+  }, "menu-item#contato": {
+    "props": {
+      "id": "menu-item-contato",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "contato",
+        "text": "CONTATO"
+      }
+    }
+  },
+  
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo#desktop"]
+    "children": ["logo"]
   },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
-  "logo#desktop": {
+  "logo": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180"
+      "url": "https://acct.global/wp-content/uploads/2021/06/logo-acct-black.svg",
+      "width": "80"
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
+    "children": ["sticky-layout#mobile"]
   },
-  "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
   },
-  "flex-layout.row#1-mobile": {
+  "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo#mobile",
+      "logo",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -118,26 +196,18 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": []
   },
+  "locale-switcher#pt":{
+    "props":{
 
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
     }
   },
+  "locale-switcher#en":{
 
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
-    }
+  },
+  "locale-switcher#es":{
+
   }
+
 }
