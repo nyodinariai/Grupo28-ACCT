@@ -4,12 +4,30 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-inicio",
+      "menu-item#category-acct",
+      "menu-item#category-oquefazemos",
+      "menu-item#category-blog",
+      "menu-item#category-parceiros",
+      "menu-item#category-contato"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#category-inicio": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---inicio/",
+        "noFollow": false,
+        "tagTitle": "INICIO",
+        "text": "INICIO"
+      }
+    }
+  },
+  "menu-item#category-acct": {
     "props": {
       "id": "menu-item-category-apparel",
       "type": "custom",
@@ -17,10 +35,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/home---acct",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "ACCT",
+        "text": "ACCT"
       }
     },
     "blocks": [
@@ -40,57 +58,139 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
+      "menu-item#category-acct-sobre",
+      "menu-item#category-acct-imprensa",
+      "menu-item#category-acct-carreiras"
     ]
   },
-  "menu-item#category-apparel-clothing": {
+  "menu-item#category-acct-sobre": {
     "props": {
-      "id": "menu-item-category-apparel-clothing",
+      "id": "menu-item-category-acct-sobre",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/clothing/",
+        "href": "/acct---accessories/sobre/",
+        "noFollow": false,
+        "tagTitle": "Sobre",
+        "text": "SOBRE NÓS"
+      }
+    }
+  },
+  "menu-item#category-acct-imprensa": {
+    "props": {
+      "id": "menu-item-category-acct-imprensa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acct---accessories/imprensa/",
+        "noFollow": false,
+        "tagTitle": "Imprensa",
+        "text": "IMPRENSA E MÍDIA"
+      }
+    }
+  },
+  "menu-item#category-acct-carreiras": {
+    "props": {
+      "id": "menu-item-category-acct-carreiras",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/acct---accessories/carreiras/",
+        "noFollow": false,
+        "tagTitle": "Carreiras",
+        "text": "CARREIRAS"
+      }
+    }
+  },
+  "menu-item#category-oquefazemos": {
+    "props": {
+      "id": "menu-item-category-oquefazemos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/",
+        "noFollow": false,
+        "tagTitle": "O QUE FAZEMOS",
+        "text": "O QUE FAZEMOS"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-oquefazemos"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-oquefazemos": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-oquefazemos"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-oquefazemos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-oquefazemos-clothing",
+      "menu-item#category-oquefazemos-accessories",
+      "menu-item#category-oquefazemos-eyeglasses"
+    ]
+  },
+  "menu-item#category-oquefazemos-clothing": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/clothing/",
         "noFollow": false,
         "tagTitle": "Clothing",
         "text": "Clothing"
       }
     }
   },
-  "menu-item#category-apparel-accessories": {
+  "menu-item#category-oquefazemos-accessories": {
     "props": {
-      "id": "menu-item-category-apparel-accessories",
+      "id": "menu-item-category-oquefazemos-accessories",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/accessories/",
+        "href": "/oquefazemos---accessories/accessories/",
         "noFollow": false,
         "tagTitle": "Accessories",
         "text": "Accessories"
       }
     }
   },
-  "menu-item#category-apparel-eyeglasses": {
+  "menu-item#category-oquefazemos-eyeglasses": {
     "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
+      "id": "menu-item-category-oquefazemos-eyeglasses",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
+        "href": "/oquefazemos---accessories/eyeglasses/",
         "noFollow": false,
         "tagTitle": "Eyeglasses",
         "text": "Eyeglasses"
       }
     }
   },
-  "menu-item#category-home": {
+  
+  "menu-item#category-blog": {
     "props": {
       "id": "menu-item-category-home",
       "type": "custom",
@@ -101,7 +201,37 @@
         "href": "/home---decor/",
         "noFollow": false,
         "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "text": "BLOG"
+      }
+    }
+  },
+  "menu-item#category-parceiros": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "PARCEIROS"
+      }
+    }
+  },
+  "menu-item#category-contato": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/home---decor/",
+        "noFollow": false,
+        "tagTitle": "Home & Decor",
+        "text": "CONTATO"
       }
     }
   },
