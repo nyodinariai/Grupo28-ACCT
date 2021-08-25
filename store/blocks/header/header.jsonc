@@ -74,7 +74,9 @@
       "flex-layout.col#spacer",
       "flex-layout.col#spacer",
       //"search-bar",
-      "locale-switcher"
+      "locale-switcher#pt",
+      "locale-switcher#en",
+      "locale-switcher#es"
       //"login",
       //"minicart.v2"
     ]
@@ -144,6 +146,26 @@
       "href": "/",
       "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
       "width": "70"
+    }
+  },
+
+  "locale-switcher#pt":{
+
+  },
+  "locale-switcher#en":{
+    "props":{
+      "buttonText": "EN"
+    }
+  },
+  "locale-switcher#es":{
+    "props":{
+    "button":"ES",
+    "buttonText":"ES",
+    "container":"ES",
+    "list":"ES",
+    "listElement":"ES",
+    "localeIdText":"ES",
+    "relativeContainer":"ES"
     }
   }
 }
