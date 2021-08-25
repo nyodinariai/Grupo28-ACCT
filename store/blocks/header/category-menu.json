@@ -139,53 +139,139 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#category-oquefazemos-clothing",
-      "menu-item#category-oquefazemos-accessories",
-      "menu-item#category-oquefazemos-eyeglasses"
+      "menu-item#category-oquefazemos-servicos",
+      "menu-item#category-oquefazemos-categorias",
+      "menu-item#category-oquefazemos-cases"
     ]
   },
-  "menu-item#category-oquefazemos-clothing": {
+  "menu-item#category-oquefazemos-servicos": {
     "props": {
-      "id": "menu-item-category-oquefazemos-clothing",
+      "id": "menu-item-category-oquefazemos-servicos",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/oquefazemos---accessories/clothing/",
+        "href": "/oquefazemos---accessories/servicos/",
         "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "servicos",
+        "text": "SERVIÇOS"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-oquefazemos-servicos"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-oquefazemos-servicos": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-oquefazemos-servicos"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-oquefazemos-servicos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-oquefazemos-servicos-quality",
+      "menu-item#category-oquefazemos-servicos-data",
+      "menu-item#category-oquefazemos-servicos-experience",
+      "menu-item#category-oquefazemos-servicos-tecnologia"
+    ]
+  },
+
+  "menu-item#category-oquefazemos-servicos-quality": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-servicos-quality",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/servicos/quality",
+        "noFollow": false,
+        "tagTitle": "quality",
+        "text": "QUALITY ASSURANCE"
       }
     }
   },
-  "menu-item#category-oquefazemos-accessories": {
+  "menu-item#category-oquefazemos-servicos-data": {
     "props": {
-      "id": "menu-item-category-oquefazemos-accessories",
+      "id": "menu-item-category-oquefazemos-servicos-data",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/oquefazemos---accessories/accessories/",
+        "href": "/oquefazemos---accessories/servicos/data",
         "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
+        "tagTitle": "data",
+        "text": "DATA E GROWTH"
       }
     }
   },
-  "menu-item#category-oquefazemos-eyeglasses": {
+
+  "menu-item#category-oquefazemos-servicos-experience": {
     "props": {
-      "id": "menu-item-category-oquefazemos-eyeglasses",
+      "id": "menu-item-category-oquefazemos-servicos-experience",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/oquefazemos---accessories/eyeglasses/",
+        "href": "/oquefazemos---accessories/servicos/experience",
         "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
+        "tagTitle": "experience",
+        "text": "EXPERIENCE DESIGN"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-servicos-tecnologia": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-servicos-tecnologia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/servicos/tecnologia",
+        "noFollow": false,
+        "tagTitle": "tecnologia",
+        "text": "TECNOLOGIA"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-categorias": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categorias",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categorias/",
+        "noFollow": false,
+        "tagTitle": "categorias",
+        "text": "CATEGORIAS INDUSTRIAIS"
+      }
+    }
+  },
+  "menu-item#category-oquefazemos-cases": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-cases",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/cases/",
+        "noFollow": false,
+        "tagTitle": "cases",
+        "text": "CASES"
       }
     }
   },
