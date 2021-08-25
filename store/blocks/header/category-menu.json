@@ -258,8 +258,147 @@
         "tagTitle": "categorias",
         "text": "CATEGORIAS INDUSTRIAIS"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-oquefazemos-servicos"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-oquefazemos-servicos": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-oquefazemos-servicos"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-oquefazemos-servicos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-oquefazemos-categoria-eletrodomesticos",
+      "menu-item#category-oquefazemos-categoria-bensdeconsumo",
+      "menu-item#category-oquefazemos-categoria-eletronicos",
+      "menu-item#category-oquefazemos-categoria-casaejardim",
+      "menu-item#category-oquefazemos-categoria-supermercados",
+      "menu-item#category-oquefazemos-categoria-moda",
+      "menu-item#category-oquefazemos-categoria-farmacia"
+    ]
+  },
+
+  "menu-item#category-oquefazemos-categoria-eletrodomesticos": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-eletrodomesticos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/eletrodomesticos",
+        "noFollow": false,
+        "tagTitle": "eletrodomesticos",
+        "text": "ELETRODOMÉSTICOS"
+      }
     }
   },
+
+  "menu-item#category-oquefazemos-categoria-bensdeconsumo": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-bensdeconsumo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/bensdeconsumo",
+        "noFollow": false,
+        "tagTitle": "bensdeconsumo",
+        "text": "BENS DE CONSUMO"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-categoria-eletronicos": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-eletronicos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/eletronicos",
+        "noFollow": false,
+        "tagTitle": "eletronicos",
+        "text": "ELETRÔNICOS"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-categoria-casaejardim": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-casaejardim",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/casaejardim",
+        "noFollow": false,
+        "tagTitle": "casaejardim",
+        "text": "CASA E JARDIM"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-categoria-supermercados": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-supermercados",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/supermercados",
+        "noFollow": false,
+        "tagTitle": "supermercados",
+        "text": "SUPERMERCADOS"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-categoria-moda": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-moda",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/moda",
+        "noFollow": false,
+        "tagTitle": "moda",
+        "text": "MODA"
+      }
+    }
+  },
+
+  "menu-item#category-oquefazemos-categoria-farmacia": {
+    "props": {
+      "id": "menu-item-category-oquefazemos-categoria-farmacia",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/oquefazemos---accessories/categoria/farmacia",
+        "noFollow": false,
+        "tagTitle": "farmacia",
+        "text": "FARMÁCIA"
+      }
+    }
+  },
+
+
   "menu-item#category-oquefazemos-cases": {
     "props": {
       "id": "menu-item-category-oquefazemos-cases",
