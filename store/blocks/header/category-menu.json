@@ -1,7 +1,8 @@
 {
   "vtex.menu@2.x:menu#category-menu": {
     "props": {
-      "experimentalOptimizeRendering": true
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu"
     },
     "children": [
       "menu-item#category-inicio",
@@ -23,7 +24,7 @@
         "href": "/home---inicio/",
         "noFollow": false,
         "tagTitle": "INICIO",
-        "text": "INICIO"
+        "text": "INÍCIO"
       }
     }
   },
@@ -42,7 +43,7 @@
       },
       "iconProps": {
         "id": "nav-caret--down",
-        "size": 16,
+        "size": 10,
         "viewBox": "0 0 16 16",
         "activeClassName": "danger",
         "mutedClassName": "c-action-primary"
@@ -132,7 +133,7 @@
       },
       "iconProps": {
         "id": "nav-caret--down",
-        "size": 16,
+        "size": 10,
         "viewBox": "0 0 16 16",
         "activeClassName": "danger",
         "mutedClassName": "c-action-primary"
@@ -177,7 +178,7 @@
       },
       "iconProps": {
         "id": "nav-caret--down", 
-        "size": 16,
+        "size": 10,
         "viewBox": "0 0 16 16",
         "activeClassName": "danger",
         "mutedClassName": "c-action-primary"
@@ -290,7 +291,7 @@
       },
       "iconProps": {
         "id": "nav-caret--down",
-        "size": 16,
+        "size": 10,
         "viewBox": "0 0 16 16",
         "activeClassName": "danger",
         "mutedClassName": "c-action-primary"
